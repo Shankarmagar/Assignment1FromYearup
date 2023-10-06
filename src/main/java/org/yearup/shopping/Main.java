@@ -16,10 +16,18 @@ public class Main {
                 "Enjoy your list!");
 
 
+        Receipt receipt = new Receipt("Paul", 25);
+        printReceipt(receipt);
+    }
+
+    public static void printReceipt(Receipt r){
+
+        System.out.println(
+                "Thank you " + r.name() + " you owe " + r.amount()
+        );
     }
 
     public static void printItemCount(int n){
-        //   int numberOfItems = 5;
 
         System.out.println(
                 "You have " + n + " items");
