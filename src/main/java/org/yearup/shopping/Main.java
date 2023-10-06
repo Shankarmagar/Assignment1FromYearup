@@ -11,12 +11,27 @@ public class Main {
 
         printItemCount(numberOfItems);
 
+        Fruit[] allTheFruits = {
+                new Fruit (Size.LARGE,"orange"),
+                new Fruit (Size.SMALL,"orange"),
+                new Fruit (Size.LARGE,"apple"),
+                new Fruit (Size.SMALL,"apple"),
+                new Fruit (Size.MEDIUM,"watermelon")
+        };
+
+
+        for (Fruit fruit: allTheFruits) {
+            System.out.println(fruit.size() + " " + fruit.name());
+        }
+
 
         System.out.println(
                 "Enjoy your list!");
 
 
+
         Receipt receipt = new Receipt("Paul", 25);
+
         printReceipt(receipt);
     }
 
